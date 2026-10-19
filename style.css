@@ -1,0 +1,124 @@
+/* Reset CSS và font chữ cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 1. Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* 2. Nav (Menu) */
+nav {
+    background-color: #34495e;
+    padding: 12px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* Layout 2 cột bằng Flexbox cho Content & Sidebar */
+.main-body {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* 3. Section & Article (Cột nội dung chính) */
+.content {
+    flex: 3;
+}
+
+article {
+    background-color: #fafafa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+article h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+article p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 4. Aside (Cột Sidebar phụ) */
+.sidebar {
+    flex: 1;
+    background-color: #eef2f7;
+    padding: 15px;
+    border-radius: 4px;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 5. Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
